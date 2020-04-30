@@ -1,1 +1,6 @@
-[{"title":"Test Title","text":"Test text"},{"title":"Note test","text":"testing testing"},{"title":"New notes title","text":"note texts"}]
+[
+ {
+  "title": "Default Note Title",
+  "text": "Default Note Texts"
+ }
+]
