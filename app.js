@@ -11,11 +11,11 @@ app.use(express.static(__dirname + '/public'));
 app.use(express.urlencoded({ extended: true }));
 
 /* HTML ROUTES */
-// Returns note.html file
+// Returns index.html file
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
-// Returns index.html file
+// Returns notes.html file
 app.get('/notes', function(req, res) {
   res.sendFile(path.join(__dirname, 'public/notes.html'));
 });
