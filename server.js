@@ -33,7 +33,6 @@ app.post('/api/notes', function(req, res) {
   fs.writeFileSync(path.join(__dirname, './db/db.json'), JSON.stringify(db, null, 1), 'utf-8') 
   res.json(enteredNote);
   if (error) throw error;
-
 });
 
 // Reads notes and deletes selected for deletion
