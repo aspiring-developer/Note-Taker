@@ -47,6 +47,7 @@ app.delete("/api/notes/:id", function (req, res) {
     res.end();
 });
 // Starts the server to begin listening
-app.listen(3000, function(req, res) {   
+const host = '0.0.0.0';
+app.listen(PORT, host, function(req, res) {   
   console.log("App listening on PORT " + PORT + ".");    // This result is seen on terminal
   });
