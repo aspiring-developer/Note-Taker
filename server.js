@@ -39,6 +39,7 @@ app.post('/api/notes', function(req, res) {
 app.delete("/api/notes/:id", function (req, res) {
   var selectedNote = db.find(function({id}) {id === JSON.parse(req.params.id)
   });
+  
   db.splice(db.indexOf(selectedNote));
   fs.writeFileSync('./db/db.json', JSON.stringify(db, null, 1), 'utf-8')
     res.end();
